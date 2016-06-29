@@ -1,0 +1,28 @@
+c:\users\selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\finanzasg2.exe.config
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\finanzasg2.exe
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\finanzasg2.pdb
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\finanzasg2.xml
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.vbprojResolveAssemblyReference.cache
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.MDIPrincipal.resources
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.Resources.resources
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.vbproj.GenerateResource.Cache
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.exe
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.xml
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.pdb
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\bin\Debug\finanzasg2.exe.config
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\bin\Debug\finanzasg2.exe
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\bin\Debug\finanzasg2.pdb
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\bin\Debug\finanzasg2.xml
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\bin\Debug\dll_Catalogo_Cuentas.dll
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\bin\Debug\dll_Catalogo_Cuentas.pdb
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\bin\Debug\dll_Catalogo_Cuentas.xml
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\obj\Debug\finanzasg2.MDIPrincipal.resources
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\obj\Debug\finanzasg2.Resources.resources
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\obj\Debug\finanzasg2.vbproj.GenerateResource.Cache
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\obj\Debug\finanzasg2.exe
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\obj\Debug\finanzasg2.xml
+C:\Users\ITLIGENCIA\Desktop\Nueva carpeta\finanzasg2\obj\Debug\finanzasg2.pdb
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\dll_Catalogo_Cuentas.pdb
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\dll_Catalogo_Cuentas.xml
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.panelConciliacion.resources
+C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.cheques.resources

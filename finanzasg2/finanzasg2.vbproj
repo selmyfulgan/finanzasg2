@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9DC4796-BE55-4665-8FC2-A9D8F595FCF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>finanzasg2.My.MyApplication</StartupObject>
+    <RootNamespace>finanzasg2</RootNamespace>
+    <AssemblyName>finanzasg2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>finanzasg2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>finanzasg2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dll_Catalogo_Cuentas">
+      <HintPath>..\..\..\Documents\Visual Studio 2015\Projects\dll_Catalogo_Cuentas\dll_Catalogo_Cuentas\bin\Debug\dll_Catalogo_Cuentas.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="panelConciliacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelConciliacion.Designer.vb">
+      <DependentUpon>panelConciliacion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cheques.Designer.vb">
+      <DependentUpon>cheques.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cheques.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.Designer.vb">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cheques.resx">
+      <DependentUpon>cheques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelConciliacion.resx">
+      <DependentUpon>panelConciliacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47477522-flat-design-illustration-concepts-for-business-analysis-financial-statement-consulting-team-work-pro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_105852381_NFSzHMa7LxVztC6M733pSweEy01H07FE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portadita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e1442008428497.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4f63d647de476.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284973.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284974.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
