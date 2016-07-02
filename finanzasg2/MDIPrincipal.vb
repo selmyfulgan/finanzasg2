@@ -66,8 +66,8 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub CatalogoDeCuentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatalogoDeCuentasToolStripMenuItem.Click
-        Dim frmCatalogo As New dll_Catalogo_Cuentas.frmCatalogoCuentas
-        frmCatalogo.ShowDialog()
+        'Dim frmCatalogo As New dll_Catalogo_Cuentas.frmCatalogoCuentas
+        'frmCatalogo.ShowDialog()
     End Sub
 
     Private Sub ContabilidadToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ContabilidadToolStripMenuItem1.Click
@@ -81,5 +81,10 @@ Public Class MDIPrincipal
 
     Private Sub MDIPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
+    End Sub
+
+    Private Sub PeríodoContableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PeríodoContableToolStripMenuItem.Click
+        Dim frperiodocontable As New dll_periodocontable.frPeriodo()
+        frperiodocontable.Show()
     End Sub
 End Class

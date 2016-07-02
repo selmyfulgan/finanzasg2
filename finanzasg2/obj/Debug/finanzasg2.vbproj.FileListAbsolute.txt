@@ -28,3 +28,21 @@ C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\D
 C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.cheques.resources
 C:\Users\ronyc\Documents\Visual Studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\finanzasg2.exe.config
 C:\Users\ronyc\Documents\Visual Studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.xml
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\finanzasg2.exe.config
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.xml
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.vbprojResolveAssemblyReference.cache
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.cheques.resources
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.panelConciliacion.resources
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.MDIPrincipal.resources
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.Resources.resources
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.vbproj.GenerateResource.Cache
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\finanzasg2.exe
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\finanzasg2.pdb
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\finanzasg2.xml
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\dll_periodocontable.dll
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\EntityFramework.dll
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\dll_periodocontable.pdb
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\dll_periodocontable.xml
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\bin\Debug\EntityFramework.xml
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.exe
+C:\Users\Orochi\Documents\Repositorio\finanzasg2\finanzasg2\obj\Debug\finanzasg2.pdb

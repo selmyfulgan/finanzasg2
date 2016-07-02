@@ -50,6 +50,12 @@
     <Reference Include="dll_Catalogo_Cuentas">
       <HintPath>..\..\..\Documents\Visual Studio 2015\Projects\dll_Catalogo_Cuentas\dll_Catalogo_Cuentas\bin\Debug\dll_Catalogo_Cuentas.dll</HintPath>
     </Reference>
+    <Reference Include="dll_periodocontable">
+      <HintPath>..\..\..\..\Desktop\Jaime\Periodo_contable\dll_periodocontable\bin\Debug\dll_periodocontable.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\Desktop\Jaime\Periodo_contable\dll_periodocontable\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
