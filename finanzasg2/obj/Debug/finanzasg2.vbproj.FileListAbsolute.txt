@@ -26,3 +26,5 @@ C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\D
 C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\dll_Catalogo_Cuentas.xml
 C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.panelConciliacion.resources
 C:\Users\Selmy\documents\visual studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.cheques.resources
+C:\Users\ronyc\Documents\Visual Studio 2015\Projects\finanzasg2\finanzasg2\bin\Debug\finanzasg2.exe.config
+C:\Users\ronyc\Documents\Visual Studio 2015\Projects\finanzasg2\finanzasg2\obj\Debug\finanzasg2.xml

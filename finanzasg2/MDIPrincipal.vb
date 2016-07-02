@@ -5,7 +5,7 @@ Public Class MDIPrincipal
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs)
         ' Cree una nueva instancia del formulario secundario.
         Dim ChildForm As New System.Windows.Forms.Form
-        ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
+        ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo. 
         ChildForm.MdiParent = Me
 
         m_ChildFormNumber += 1
