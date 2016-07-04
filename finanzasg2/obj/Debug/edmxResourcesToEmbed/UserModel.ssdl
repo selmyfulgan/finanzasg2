@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_mf_detalle_usuarios">
+    <Key>
+      <PropertyRef Name="id_detalle" />
+    </Key>
+    <Property Name="id_detalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_permisos" Type="int" Nullable="false" />
+    <Property Name="id_modulo" Type="int" Nullable="false" />
+    <Property Name="id_usuarios" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_mf_modulo">
+    <Key>
+      <PropertyRef Name="id_modulo" />
+    </Key>
+    <Property Name="id_modulo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mod_nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="mod_descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="mod_estado" Type="bit" Nullable="false" />
+    <Property Name="mod_fecha_ingreso" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_mf_permisos">
+    <Key>
+      <PropertyRef Name="id_permisos" />
+    </Key>
+    <Property Name="id_permisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="per_nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="per_correlativo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="per_estado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_mf_usuarios">
+    <Key>
+      <PropertyRef Name="id_usuarios" />
+    </Key>
+    <Property Name="id_usuarios" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="user_password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="user_estado" Type="bit" Nullable="false" />
+    <Property Name="user_correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="user_fecha_ingreso" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="tbl_mf_modulo_tbl_mf_detalle_usuarios_fk">
+    <End Role="tbl_mf_modulo" Type="Self.tbl_mf_modulo" Multiplicity="1" />
+    <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_mf_modulo">
+        <PropertyRef Name="id_modulo" />
+      </Principal>
+      <Dependent Role="tbl_mf_detalle_usuarios">
+        <PropertyRef Name="id_modulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tbl_mf_permisos_tbl_mf_detalle_usuarios_fk">
+    <End Role="tbl_mf_permisos" Type="Self.tbl_mf_permisos" Multiplicity="1" />
+    <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_mf_permisos">
+        <PropertyRef Name="id_permisos" />
+      </Principal>
+      <Dependent Role="tbl_mf_detalle_usuarios">
+        <PropertyRef Name="id_permisos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk">
+    <End Role="tbl_mf_usuarios" Type="Self.tbl_mf_usuarios" Multiplicity="1" />
+    <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_mf_usuarios">
+        <PropertyRef Name="id_usuarios" />
+      </Principal>
+      <Dependent Role="tbl_mf_detalle_usuarios">
+        <PropertyRef Name="id_usuarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB2ModelStoreContainer">
+    <EntitySet Name="tbl_mf_detalle_usuarios" EntityType="Self.tbl_mf_detalle_usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_mf_modulo" EntityType="Self.tbl_mf_modulo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_mf_permisos" EntityType="Self.tbl_mf_permisos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_mf_usuarios" EntityType="Self.tbl_mf_usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="tbl_mf_modulo_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_modulo_tbl_mf_detalle_usuarios_fk">
+      <End Role="tbl_mf_modulo" EntitySet="tbl_mf_modulo" />
+      <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="tbl_mf_permisos_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_permisos_tbl_mf_detalle_usuarios_fk">
+      <End Role="tbl_mf_permisos" EntitySet="tbl_mf_permisos" />
+      <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk">
+      <End Role="tbl_mf_usuarios" EntitySet="tbl_mf_usuarios" />
+      <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

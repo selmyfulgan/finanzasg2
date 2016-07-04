@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB2ModelStoreContainer" CdmEntityContainer="DB2Entities">
+    <EntitySetMapping Name="tbl_mf_detalle_usuarios">
+      <EntityTypeMapping TypeName="DB2Model.tbl_mf_detalle_usuarios">
+        <MappingFragment StoreEntitySet="tbl_mf_detalle_usuarios">
+          <ScalarProperty Name="id_detalle" ColumnName="id_detalle" />
+          <ScalarProperty Name="id_permisos" ColumnName="id_permisos" />
+          <ScalarProperty Name="id_modulo" ColumnName="id_modulo" />
+          <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_mf_modulo">
+      <EntityTypeMapping TypeName="DB2Model.tbl_mf_modulo">
+        <MappingFragment StoreEntitySet="tbl_mf_modulo">
+          <ScalarProperty Name="id_modulo" ColumnName="id_modulo" />
+          <ScalarProperty Name="mod_nombre" ColumnName="mod_nombre" />
+          <ScalarProperty Name="mod_descripcion" ColumnName="mod_descripcion" />
+          <ScalarProperty Name="mod_estado" ColumnName="mod_estado" />
+          <ScalarProperty Name="mod_fecha_ingreso" ColumnName="mod_fecha_ingreso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_mf_permisos">
+      <EntityTypeMapping TypeName="DB2Model.tbl_mf_permisos">
+        <MappingFragment StoreEntitySet="tbl_mf_permisos">
+          <ScalarProperty Name="id_permisos" ColumnName="id_permisos" />
+          <ScalarProperty Name="per_nombre" ColumnName="per_nombre" />
+          <ScalarProperty Name="per_correlativo" ColumnName="per_correlativo" />
+          <ScalarProperty Name="per_estado" ColumnName="per_estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_mf_usuarios">
+      <EntityTypeMapping TypeName="DB2Model.tbl_mf_usuarios">
+        <MappingFragment StoreEntitySet="tbl_mf_usuarios">
+          <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
+          <ScalarProperty Name="user_nombre" ColumnName="user_nombre" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+          <ScalarProperty Name="user_estado" ColumnName="user_estado" />
+          <ScalarProperty Name="user_correo" ColumnName="user_correo" />
+          <ScalarProperty Name="user_fecha_ingreso" ColumnName="user_fecha_ingreso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

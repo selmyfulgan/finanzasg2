@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_mf_detalle_usuarios">
+          <Key>
+            <PropertyRef Name="id_detalle" />
+          </Key>
+          <Property Name="id_detalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_permisos" Type="int" Nullable="false" />
+          <Property Name="id_modulo" Type="int" Nullable="false" />
+          <Property Name="id_usuarios" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_mf_modulo">
+          <Key>
+            <PropertyRef Name="id_modulo" />
+          </Key>
+          <Property Name="id_modulo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="mod_nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="mod_descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="mod_estado" Type="bit" Nullable="false" />
+          <Property Name="mod_fecha_ingreso" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_mf_permisos">
+          <Key>
+            <PropertyRef Name="id_permisos" />
+          </Key>
+          <Property Name="id_permisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="per_nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="per_correlativo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="per_estado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_mf_usuarios">
+          <Key>
+            <PropertyRef Name="id_usuarios" />
+          </Key>
+          <Property Name="id_usuarios" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="user_nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="user_password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="user_estado" Type="bit" Nullable="false" />
+          <Property Name="user_correo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="user_fecha_ingreso" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="tbl_mf_modulo_tbl_mf_detalle_usuarios_fk">
+          <End Role="tbl_mf_modulo" Type="Self.tbl_mf_modulo" Multiplicity="1" />
+          <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_mf_modulo">
+              <PropertyRef Name="id_modulo" />
+            </Principal>
+            <Dependent Role="tbl_mf_detalle_usuarios">
+              <PropertyRef Name="id_modulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_mf_permisos_tbl_mf_detalle_usuarios_fk">
+          <End Role="tbl_mf_permisos" Type="Self.tbl_mf_permisos" Multiplicity="1" />
+          <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_mf_permisos">
+              <PropertyRef Name="id_permisos" />
+            </Principal>
+            <Dependent Role="tbl_mf_detalle_usuarios">
+              <PropertyRef Name="id_permisos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk">
+          <End Role="tbl_mf_usuarios" Type="Self.tbl_mf_usuarios" Multiplicity="1" />
+          <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_mf_usuarios">
+              <PropertyRef Name="id_usuarios" />
+            </Principal>
+            <Dependent Role="tbl_mf_detalle_usuarios">
+              <PropertyRef Name="id_usuarios" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DB2ModelStoreContainer">
+          <EntitySet Name="tbl_mf_detalle_usuarios" EntityType="Self.tbl_mf_detalle_usuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_mf_modulo" EntityType="Self.tbl_mf_modulo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_mf_permisos" EntityType="Self.tbl_mf_permisos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_mf_usuarios" EntityType="Self.tbl_mf_usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="tbl_mf_modulo_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_modulo_tbl_mf_detalle_usuarios_fk">
+            <End Role="tbl_mf_modulo" EntitySet="tbl_mf_modulo" />
+            <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_mf_permisos_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_permisos_tbl_mf_detalle_usuarios_fk">
+            <End Role="tbl_mf_permisos" EntitySet="tbl_mf_permisos" />
+            <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk">
+            <End Role="tbl_mf_usuarios" EntitySet="tbl_mf_usuarios" />
+            <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_mf_detalle_usuarios">
+          <Key>
+            <PropertyRef Name="id_detalle" />
+          </Key>
+          <Property Name="id_detalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_permisos" Type="Int32" Nullable="false" />
+          <Property Name="id_modulo" Type="Int32" Nullable="false" />
+          <Property Name="id_usuarios" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tbl_mf_modulo" Relationship="Self.tbl_mf_modulo_tbl_mf_detalle_usuarios_fk" FromRole="tbl_mf_detalle_usuarios" ToRole="tbl_mf_modulo" />
+          <NavigationProperty Name="tbl_mf_permisos" Relationship="Self.tbl_mf_permisos_tbl_mf_detalle_usuarios_fk" FromRole="tbl_mf_detalle_usuarios" ToRole="tbl_mf_permisos" />
+          <NavigationProperty Name="tbl_mf_usuarios" Relationship="Self.tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk" FromRole="tbl_mf_detalle_usuarios" ToRole="tbl_mf_usuarios" />
+        </EntityType>
+        <EntityType Name="tbl_mf_modulo">
+          <Key>
+            <PropertyRef Name="id_modulo" />
+          </Key>
+          <Property Name="id_modulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="mod_nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mod_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mod_estado" Type="Boolean" Nullable="false" />
+          <Property Name="mod_fecha_ingreso" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tbl_mf_detalle_usuarios" Relationship="Self.tbl_mf_modulo_tbl_mf_detalle_usuarios_fk" FromRole="tbl_mf_modulo" ToRole="tbl_mf_detalle_usuarios" />
+        </EntityType>
+        <EntityType Name="tbl_mf_permisos">
+          <Key>
+            <PropertyRef Name="id_permisos" />
+          </Key>
+          <Property Name="id_permisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="per_nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="per_correlativo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="per_estado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="tbl_mf_detalle_usuarios" Relationship="Self.tbl_mf_permisos_tbl_mf_detalle_usuarios_fk" FromRole="tbl_mf_permisos" ToRole="tbl_mf_detalle_usuarios" />
+        </EntityType>
+        <EntityType Name="tbl_mf_usuarios">
+          <Key>
+            <PropertyRef Name="id_usuarios" />
+          </Key>
+          <Property Name="id_usuarios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="user_nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_estado" Type="Boolean" Nullable="false" />
+          <Property Name="user_correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_fecha_ingreso" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tbl_mf_detalle_usuarios" Relationship="Self.tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk" FromRole="tbl_mf_usuarios" ToRole="tbl_mf_detalle_usuarios" />
+        </EntityType>
+        <Association Name="tbl_mf_modulo_tbl_mf_detalle_usuarios_fk">
+          <End Role="tbl_mf_modulo" Type="Self.tbl_mf_modulo" Multiplicity="1" />
+          <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_mf_modulo">
+              <PropertyRef Name="id_modulo" />
+            </Principal>
+            <Dependent Role="tbl_mf_detalle_usuarios">
+              <PropertyRef Name="id_modulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_mf_permisos_tbl_mf_detalle_usuarios_fk">
+          <End Role="tbl_mf_permisos" Type="Self.tbl_mf_permisos" Multiplicity="1" />
+          <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_mf_permisos">
+              <PropertyRef Name="id_permisos" />
+            </Principal>
+            <Dependent Role="tbl_mf_detalle_usuarios">
+              <PropertyRef Name="id_permisos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk">
+          <End Role="tbl_mf_usuarios" Type="Self.tbl_mf_usuarios" Multiplicity="1" />
+          <End Role="tbl_mf_detalle_usuarios" Type="Self.tbl_mf_detalle_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_mf_usuarios">
+              <PropertyRef Name="id_usuarios" />
+            </Principal>
+            <Dependent Role="tbl_mf_detalle_usuarios">
+              <PropertyRef Name="id_usuarios" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DB2Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_mf_detalle_usuarios" EntityType="Self.tbl_mf_detalle_usuarios" />
+          <EntitySet Name="tbl_mf_modulo" EntityType="Self.tbl_mf_modulo" />
+          <EntitySet Name="tbl_mf_permisos" EntityType="Self.tbl_mf_permisos" />
+          <EntitySet Name="tbl_mf_usuarios" EntityType="Self.tbl_mf_usuarios" />
+          <AssociationSet Name="tbl_mf_modulo_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_modulo_tbl_mf_detalle_usuarios_fk">
+            <End Role="tbl_mf_modulo" EntitySet="tbl_mf_modulo" />
+            <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_mf_permisos_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_permisos_tbl_mf_detalle_usuarios_fk">
+            <End Role="tbl_mf_permisos" EntitySet="tbl_mf_permisos" />
+            <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk" Association="Self.tbl_mf_usuarios_tbl_mf_detalle_usuarios_fk">
+            <End Role="tbl_mf_usuarios" EntitySet="tbl_mf_usuarios" />
+            <End Role="tbl_mf_detalle_usuarios" EntitySet="tbl_mf_detalle_usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB2ModelStoreContainer" CdmEntityContainer="DB2Entities">
+          <EntitySetMapping Name="tbl_mf_detalle_usuarios">
+            <EntityTypeMapping TypeName="DB2Model.tbl_mf_detalle_usuarios">
+              <MappingFragment StoreEntitySet="tbl_mf_detalle_usuarios">
+                <ScalarProperty Name="id_detalle" ColumnName="id_detalle" />
+                <ScalarProperty Name="id_permisos" ColumnName="id_permisos" />
+                <ScalarProperty Name="id_modulo" ColumnName="id_modulo" />
+                <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_mf_modulo">
+            <EntityTypeMapping TypeName="DB2Model.tbl_mf_modulo">
+              <MappingFragment StoreEntitySet="tbl_mf_modulo">
+                <ScalarProperty Name="id_modulo" ColumnName="id_modulo" />
+                <ScalarProperty Name="mod_nombre" ColumnName="mod_nombre" />
+                <ScalarProperty Name="mod_descripcion" ColumnName="mod_descripcion" />
+                <ScalarProperty Name="mod_estado" ColumnName="mod_estado" />
+                <ScalarProperty Name="mod_fecha_ingreso" ColumnName="mod_fecha_ingreso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_mf_permisos">
+            <EntityTypeMapping TypeName="DB2Model.tbl_mf_permisos">
+              <MappingFragment StoreEntitySet="tbl_mf_permisos">
+                <ScalarProperty Name="id_permisos" ColumnName="id_permisos" />
+                <ScalarProperty Name="per_nombre" ColumnName="per_nombre" />
+                <ScalarProperty Name="per_correlativo" ColumnName="per_correlativo" />
+                <ScalarProperty Name="per_estado" ColumnName="per_estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_mf_usuarios">
+            <EntityTypeMapping TypeName="DB2Model.tbl_mf_usuarios">
+              <MappingFragment StoreEntitySet="tbl_mf_usuarios">
+                <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
+                <ScalarProperty Name="user_nombre" ColumnName="user_nombre" />
+                <ScalarProperty Name="user_password" ColumnName="user_password" />
+                <ScalarProperty Name="user_estado" ColumnName="user_estado" />
+                <ScalarProperty Name="user_correo" ColumnName="user_correo" />
+                <ScalarProperty Name="user_fecha_ingreso" ColumnName="user_fecha_ingreso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

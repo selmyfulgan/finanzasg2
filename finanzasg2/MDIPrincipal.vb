@@ -87,4 +87,9 @@ Public Class MDIPrincipal
         Dim frperiodocontable As New dll_periodocontable.frPeriodo()
         frperiodocontable.Show()
     End Sub
+
+    Private Sub MantenimientoDeUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MantenimientoDeUsuariosToolStripMenuItem.Click
+        Dim frm As New Usuarios()
+        frm.Show()
+    End Sub
 End Class
