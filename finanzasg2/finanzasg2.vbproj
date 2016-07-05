@@ -86,6 +86,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bancos.Designer.vb">
+      <DependentUpon>Bancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="panelConciliacion.vb">
       <SubType>Form</SubType>
     </Compile>

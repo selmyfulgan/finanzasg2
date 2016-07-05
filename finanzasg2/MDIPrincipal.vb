@@ -92,4 +92,10 @@ Public Class MDIPrincipal
         Dim frm As New Usuarios()
         frm.Show()
     End Sub
+
+    Private Sub BancosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BancosToolStripMenuItem.Click
+        Dim frm As New Bancos()
+        frm.Show()
+    End Sub
+
 End Class
