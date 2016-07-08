@@ -107,11 +107,11 @@
     <Compile Include="Bancos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="panelConciliacion.vb">
+    <Compile Include="frPanelConciliacion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="panelConciliacion.Designer.vb">
-      <DependentUpon>panelConciliacion.vb</DependentUpon>
+    <Compile Include="frPanelConciliacion.Designer.vb">
+      <DependentUpon>frPanelConciliacion.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cheques.Designer.vb">
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="cheques.resx">
       <DependentUpon>cheques.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="panelConciliacion.resx">
-      <DependentUpon>panelConciliacion.vb</DependentUpon>
+    <EmbeddedResource Include="frPanelConciliacion.resx">
+      <DependentUpon>frPanelConciliacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.vb</DependentUpon>

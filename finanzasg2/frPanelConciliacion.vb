@@ -1,4 +1,4 @@
-﻿Public Class panelConciliacion
+﻿Public Class frPanelConciliacion
     Private Sub Button1_Click(sender As Object, e As EventArgs) 
         Dim frm As New cheques()
         frm.Show()

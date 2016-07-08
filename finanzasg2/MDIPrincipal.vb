@@ -75,7 +75,7 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub ConsiliaciónBancariaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ConsiliaciónBancariaToolStripMenuItem1.Click
-        Dim frm As New panelConciliacion()
+        Dim frm As New frPanelConciliacion()
         frm.Show()
     End Sub
 
