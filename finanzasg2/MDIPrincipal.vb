@@ -98,4 +98,8 @@ Public Class MDIPrincipal
         frm.Show()
     End Sub
 
+    Private Sub TipoMovimientoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipoMovimientoToolStripMenuItem.Click
+        Dim frm As New TipoMovimiento()
+        frm.Show()
+    End Sub
 End Class
