@@ -14,4 +14,8 @@
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) 
 
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Close()
+    End Sub
 End Class

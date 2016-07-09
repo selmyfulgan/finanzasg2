@@ -107,11 +107,29 @@
     <Compile Include="Bancos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frExtractoImp.vb">
+    <Compile Include="CrearCuenta.Designer.vb">
+      <DependentUpon>CrearCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frExtractoImp.Designer.vb">
-      <DependentUpon>frExtractoImp.vb</DependentUpon>
+    <Compile Include="DetalleUsuarios.Designer.vb">
+      <DependentUpon>DetalleUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelConciliacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelConciliacion.Designer.vb">
+      <DependentUpon>panelConciliacion.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cheques.Designer.vb">
@@ -188,8 +206,17 @@
     <EmbeddedResource Include="cheques.resx">
       <DependentUpon>cheques.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frExtractoImp.resx">
-      <DependentUpon>frExtractoImp.vb</DependentUpon>
+    <EmbeddedResource Include="CrearCuenta.resx">
+      <DependentUpon>CrearCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleUsuarios.resx">
+      <DependentUpon>DetalleUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelConciliacion.resx">
+      <DependentUpon>panelConciliacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.vb</DependentUpon>
@@ -259,7 +286,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\pngs\Floppy_disk-512.png" />
     <Content Include="UserModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UserModel.edmx</DependentUpon>
