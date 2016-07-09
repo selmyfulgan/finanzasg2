@@ -46,6 +46,12 @@ Partial Class MDIPrincipal
         Me.SeguridadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MantenimientoDeUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImportarDocumentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AbrirDocumentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExportarDocumentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevaConciliacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConciliacionPendienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AjustesContablesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -54,17 +60,17 @@ Partial Class MDIPrincipal
         '
         Me.StatusStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
-        Me.StatusStrip.Location = New System.Drawing.Point(0, 676)
+        Me.StatusStrip.Location = New System.Drawing.Point(0, 533)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Padding = New System.Windows.Forms.Padding(1, 0, 21, 0)
-        Me.StatusStrip.Size = New System.Drawing.Size(1209, 22)
+        Me.StatusStrip.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
+        Me.StatusStrip.Size = New System.Drawing.Size(1075, 25)
         Me.StatusStrip.TabIndex = 7
         Me.StatusStrip.Text = "StatusStrip"
         '
         'ToolStripStatusLabel
         '
         Me.ToolStripStatusLabel.Name = "ToolStripStatusLabel"
-        Me.ToolStripStatusLabel.Size = New System.Drawing.Size(42, 17)
+        Me.ToolStripStatusLabel.Size = New System.Drawing.Size(54, 20)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
         'MenuStrip1
@@ -73,7 +79,8 @@ Partial Class MDIPrincipal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContabilidadToolStripMenuItem, Me.ToolStripMenuItem1, Me.AyudaToolStripMenuItem, Me.SeguridadToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1209, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1075, 28)
         Me.MenuStrip1.TabIndex = 9
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -81,130 +88,169 @@ Partial Class MDIPrincipal
         '
         Me.ContabilidadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContabilidadToolStripMenuItem1, Me.PeríodoContableToolStripMenuItem, Me.BancosToolStripMenuItem, Me.ConsiliaciónBancariaToolStripMenuItem1})
         Me.ContabilidadToolStripMenuItem.Name = "ContabilidadToolStripMenuItem"
-        Me.ContabilidadToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
+        Me.ContabilidadToolStripMenuItem.Size = New System.Drawing.Size(88, 24)
         Me.ContabilidadToolStripMenuItem.Text = "Catálogos"
         '
         'ContabilidadToolStripMenuItem1
         '
         Me.ContabilidadToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatalogoDeCuentasToolStripMenuItem})
         Me.ContabilidadToolStripMenuItem1.Name = "ContabilidadToolStripMenuItem1"
-        Me.ContabilidadToolStripMenuItem1.Size = New System.Drawing.Size(188, 22)
+        Me.ContabilidadToolStripMenuItem1.Size = New System.Drawing.Size(200, 26)
         Me.ContabilidadToolStripMenuItem1.Text = "Contabilidad"
         '
         'CatalogoDeCuentasToolStripMenuItem
         '
         Me.CatalogoDeCuentasToolStripMenuItem.Name = "CatalogoDeCuentasToolStripMenuItem"
-        Me.CatalogoDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
+        Me.CatalogoDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(222, 26)
         Me.CatalogoDeCuentasToolStripMenuItem.Text = "Catalogo de Cuentas"
         '
         'PeríodoContableToolStripMenuItem
         '
         Me.PeríodoContableToolStripMenuItem.Name = "PeríodoContableToolStripMenuItem"
-        Me.PeríodoContableToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.PeríodoContableToolStripMenuItem.Size = New System.Drawing.Size(200, 26)
         Me.PeríodoContableToolStripMenuItem.Text = "Período contable"
         '
         'BancosToolStripMenuItem
         '
         Me.BancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IngresoDeBancosToolStripMenuItem, Me.MoviemientosBancariosToolStripMenuItem})
         Me.BancosToolStripMenuItem.Name = "BancosToolStripMenuItem"
-        Me.BancosToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.BancosToolStripMenuItem.Size = New System.Drawing.Size(200, 26)
         Me.BancosToolStripMenuItem.Text = "Bancos"
         '
         'IngresoDeBancosToolStripMenuItem
         '
         Me.IngresoDeBancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BancosToolStripMenuItem1, Me.TipoMovimientoToolStripMenuItem, Me.CreaciònDeCuentasToolStripMenuItem})
         Me.IngresoDeBancosToolStripMenuItem.Name = "IngresoDeBancosToolStripMenuItem"
-        Me.IngresoDeBancosToolStripMenuItem.Size = New System.Drawing.Size(204, 22)
+        Me.IngresoDeBancosToolStripMenuItem.Size = New System.Drawing.Size(246, 26)
         Me.IngresoDeBancosToolStripMenuItem.Text = "Mantenimientos"
         '
         'BancosToolStripMenuItem1
         '
         Me.BancosToolStripMenuItem1.Name = "BancosToolStripMenuItem1"
-        Me.BancosToolStripMenuItem1.Size = New System.Drawing.Size(183, 22)
+        Me.BancosToolStripMenuItem1.Size = New System.Drawing.Size(219, 26)
         Me.BancosToolStripMenuItem1.Text = "Bancos"
         '
         'TipoMovimientoToolStripMenuItem
         '
         Me.TipoMovimientoToolStripMenuItem.Name = "TipoMovimientoToolStripMenuItem"
-        Me.TipoMovimientoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.TipoMovimientoToolStripMenuItem.Size = New System.Drawing.Size(219, 26)
         Me.TipoMovimientoToolStripMenuItem.Text = "Tipo Movimiento"
         '
         'CreaciònDeCuentasToolStripMenuItem
         '
         Me.CreaciònDeCuentasToolStripMenuItem.Name = "CreaciònDeCuentasToolStripMenuItem"
-        Me.CreaciònDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.CreaciònDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(219, 26)
         Me.CreaciònDeCuentasToolStripMenuItem.Text = "Creaciòn de Cuentas"
         '
         'MoviemientosBancariosToolStripMenuItem
         '
         Me.MoviemientosBancariosToolStripMenuItem.Name = "MoviemientosBancariosToolStripMenuItem"
-        Me.MoviemientosBancariosToolStripMenuItem.Size = New System.Drawing.Size(204, 22)
+        Me.MoviemientosBancariosToolStripMenuItem.Size = New System.Drawing.Size(246, 26)
         Me.MoviemientosBancariosToolStripMenuItem.Text = "Moviemientos Bancarios"
         '
         'ConsiliaciónBancariaToolStripMenuItem1
         '
+        Me.ConsiliaciónBancariaToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportarDocumentoToolStripMenuItem, Me.AbrirDocumentoToolStripMenuItem, Me.ExportarDocumentoToolStripMenuItem})
         Me.ConsiliaciónBancariaToolStripMenuItem1.Name = "ConsiliaciónBancariaToolStripMenuItem1"
-        Me.ConsiliaciónBancariaToolStripMenuItem1.Size = New System.Drawing.Size(188, 22)
-        Me.ConsiliaciónBancariaToolStripMenuItem1.Text = "Conciliacion Bancaria"
+        Me.ConsiliaciónBancariaToolStripMenuItem1.Size = New System.Drawing.Size(200, 26)
+        Me.ConsiliaciónBancariaToolStripMenuItem1.Text = "Extracto Bancario"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesDeContabilidadToolStripMenuItem, Me.ReportesToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(66, 20)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(79, 24)
         Me.ToolStripMenuItem1.Text = "Procesos"
         '
         'ReportesDeContabilidadToolStripMenuItem
         '
         Me.ReportesDeContabilidadToolStripMenuItem.Name = "ReportesDeContabilidadToolStripMenuItem"
-        Me.ReportesDeContabilidadToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
+        Me.ReportesDeContabilidadToolStripMenuItem.Size = New System.Drawing.Size(254, 26)
         Me.ReportesDeContabilidadToolStripMenuItem.Text = "Reportes de Contabilidad"
         '
         'ReportesToolStripMenuItem
         '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaConciliacionToolStripMenuItem, Me.ConciliacionPendienteToolStripMenuItem, Me.AjustesContablesToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
-        Me.ReportesToolStripMenuItem.Text = " Reportes Conciliación bancaria"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(254, 26)
+        Me.ReportesToolStripMenuItem.Text = "Conciliacion Bancaria"
         '
         'AyudaToolStripMenuItem
         '
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(80, 24)
         Me.AyudaToolStripMenuItem.Text = "Reportes"
         '
         'SeguridadToolStripMenuItem
         '
         Me.SeguridadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MantenimientoDeUsuariosToolStripMenuItem})
         Me.SeguridadToolStripMenuItem.Name = "SeguridadToolStripMenuItem"
-        Me.SeguridadToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
+        Me.SeguridadToolStripMenuItem.Size = New System.Drawing.Size(89, 24)
         Me.SeguridadToolStripMenuItem.Text = "Seguridad"
         '
         'MantenimientoDeUsuariosToolStripMenuItem
         '
         Me.MantenimientoDeUsuariosToolStripMenuItem.Name = "MantenimientoDeUsuariosToolStripMenuItem"
-        Me.MantenimientoDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(219, 22)
+        Me.MantenimientoDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(264, 26)
         Me.MantenimientoDeUsuariosToolStripMenuItem.Text = "Mantenimiento de usuarios"
         '
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(100, 24)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de ..."
+        '
+        'ImportarDocumentoToolStripMenuItem
+        '
+        Me.ImportarDocumentoToolStripMenuItem.Name = "ImportarDocumentoToolStripMenuItem"
+        Me.ImportarDocumentoToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ImportarDocumentoToolStripMenuItem.Text = "Importar Documento"
+        '
+        'AbrirDocumentoToolStripMenuItem
+        '
+        Me.AbrirDocumentoToolStripMenuItem.Name = "AbrirDocumentoToolStripMenuItem"
+        Me.AbrirDocumentoToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.AbrirDocumentoToolStripMenuItem.Text = "Abrir Documento"
+        '
+        'ExportarDocumentoToolStripMenuItem
+        '
+        Me.ExportarDocumentoToolStripMenuItem.Name = "ExportarDocumentoToolStripMenuItem"
+        Me.ExportarDocumentoToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExportarDocumentoToolStripMenuItem.Text = "Exportar Documento"
+        '
+        'NuevaConciliacionToolStripMenuItem
+        '
+        Me.NuevaConciliacionToolStripMenuItem.Name = "NuevaConciliacionToolStripMenuItem"
+        Me.NuevaConciliacionToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
+        Me.NuevaConciliacionToolStripMenuItem.Text = "Nueva Conciliacion"
+        '
+        'ConciliacionPendienteToolStripMenuItem
+        '
+        Me.ConciliacionPendienteToolStripMenuItem.Name = "ConciliacionPendienteToolStripMenuItem"
+        Me.ConciliacionPendienteToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
+        Me.ConciliacionPendienteToolStripMenuItem.Text = "Conciliacion Pendiente"
+        '
+        'AjustesContablesToolStripMenuItem
+        '
+        Me.AjustesContablesToolStripMenuItem.Name = "AjustesContablesToolStripMenuItem"
+        Me.AjustesContablesToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
+        Me.AjustesContablesToolStripMenuItem.Text = "Ajustes Contables"
         '
         'MDIPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BackgroundImage = Global.finanzasg2.My.Resources.Resources.free_office_wallpaper_26001_26685_hd_wallpapers_e14420084284972
-        Me.ClientSize = New System.Drawing.Size(1209, 698)
+        Me.BackgroundImage = Global.finanzasg2.My.Resources.Resources.portadita
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1075, 558)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MDIPrincipal"
-        Me.Text = "Módulo de Finanazas"
+        Me.Text = "Módulo de Finanzas"
         Me.StatusStrip.ResumeLayout(False)
         Me.StatusStrip.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
@@ -235,4 +281,10 @@ Partial Class MDIPrincipal
     Friend WithEvents TipoMovimientoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CreaciònDeCuentasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MoviemientosBancariosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImportarDocumentoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AbrirDocumentoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExportarDocumentoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NuevaConciliacionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConciliacionPendienteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AjustesContablesToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -75,12 +75,12 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub ConsiliaciónBancariaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ConsiliaciónBancariaToolStripMenuItem1.Click
-        Dim frm As New frPanelConciliacion()
-        frm.Show()
+
     End Sub
 
     Private Sub MDIPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
+
     End Sub
 
     Private Sub PeríodoContableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PeríodoContableToolStripMenuItem.Click
@@ -100,6 +100,11 @@ Public Class MDIPrincipal
 
     Private Sub TipoMovimientoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipoMovimientoToolStripMenuItem.Click
         Dim frm As New TipoMovimiento()
+        frm.Show()
+    End Sub
+
+    Private Sub ImportarDocumentoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportarDocumentoToolStripMenuItem.Click
+        Dim frm As New frExtractoImp()
         frm.Show()
     End Sub
 End Class

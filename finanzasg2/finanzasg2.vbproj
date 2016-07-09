@@ -107,11 +107,11 @@
     <Compile Include="Bancos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frPanelConciliacion.vb">
+    <Compile Include="frExtractoImp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frPanelConciliacion.Designer.vb">
-      <DependentUpon>frPanelConciliacion.vb</DependentUpon>
+    <Compile Include="frExtractoImp.Designer.vb">
+      <DependentUpon>frExtractoImp.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cheques.Designer.vb">
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="cheques.resx">
       <DependentUpon>cheques.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frPanelConciliacion.resx">
-      <DependentUpon>frPanelConciliacion.vb</DependentUpon>
+    <EmbeddedResource Include="frExtractoImp.resx">
+      <DependentUpon>frExtractoImp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.vb</DependentUpon>
@@ -259,6 +259,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\pngs\Floppy_disk-512.png" />
     <Content Include="UserModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UserModel.edmx</DependentUpon>

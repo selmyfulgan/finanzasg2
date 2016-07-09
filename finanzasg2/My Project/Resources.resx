@@ -133,13 +133,16 @@
   <data name="portadita" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\portadita.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284972" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284974.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="47477522-flat-design-illustration-concepts-for-business-analysis-financial-statement-consulting-team-work-pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\47477522-flat-design-illustration-concepts-for-business-analysis-financial-statement-consulting-team-work-pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="a4f63d647de476" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a4f63d647de476.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284972" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284974.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Floppy_disk-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngs\Floppy_disk-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
