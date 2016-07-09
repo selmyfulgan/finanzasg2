@@ -211,9 +211,9 @@ Partial Class MDIPrincipal
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(978, 453)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(188, 44)
+        Me.Label1.Size = New System.Drawing.Size(217, 44)
         Me.Label1.TabIndex = 11
-        Me.Label1.Text = "FINAZAS"
+        Me.Label1.Text = "FINANZAS"
         '
         'MDIPrincipal
         '
