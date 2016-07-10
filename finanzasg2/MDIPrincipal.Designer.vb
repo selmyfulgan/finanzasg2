@@ -24,6 +24,7 @@ Partial Class MDIPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MDIPrincipal))
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
@@ -205,14 +206,14 @@ Partial Class MDIPrincipal
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.DarkBlue
-        Me.Label1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(913, 432)
+        Me.Label1.Location = New System.Drawing.Point(978, 453)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(269, 35)
+        Me.Label1.Size = New System.Drawing.Size(188, 44)
         Me.Label1.TabIndex = 11
-        Me.Label1.Text = "MÓDULO FINAZAS"
+        Me.Label1.Text = "FINAZAS"
         '
         'MDIPrincipal
         '
@@ -220,12 +221,13 @@ Partial Class MDIPrincipal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BackgroundImage = Global.finanzasg2.My.Resources.Resources.portadita
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1075, 558)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.IsMdiContainer = True
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MDIPrincipal"
