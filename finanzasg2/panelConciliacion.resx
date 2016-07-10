@@ -117,29 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284971" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284973.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="240_F_105852381_NFSzHMa7LxVztC6M733pSweEy01H07FE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\240_F_105852381_NFSzHMa7LxVztC6M733pSweEy01H07FE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="free-office-wallpaper-26001-26685-hd-wallpapers-e1442008428497" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e1442008428497.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vision" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vision.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="portadita" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\portadita.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="47477522-flat-design-illustration-concepts-for-business-analysis-financial-statement-consulting-team-work-pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\47477522-flat-design-illustration-concepts-for-business-analysis-financial-statement-consulting-team-work-pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="a4f63d647de476" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\a4f63d647de476.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284972" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-office-wallpaper-26001-26685-hd-wallpapers-e14420084284974.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
