@@ -75,7 +75,7 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub ConsiliaciónBancariaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ConsiliaciónBancariaToolStripMenuItem1.Click
-        Dim frm As New panelConciliacion()
+        Dim frm As New frExtracto()
         frm.Show()
     End Sub
 
@@ -106,5 +106,9 @@ Public Class MDIPrincipal
     Private Sub CreaciònDeCuentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreaciònDeCuentasToolStripMenuItem.Click
         Dim CCnt As New CrearCuenta()
         CCnt.Show()
+    End Sub
+
+    Private Sub ImportarDocumentoToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+
     End Sub
 End Class

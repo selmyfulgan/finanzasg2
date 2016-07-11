@@ -100,7 +100,7 @@ Partial Class MDIPrincipal
         '
         Me.ContabilidadToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatalogoDeCuentasToolStripMenuItem})
         Me.ContabilidadToolStripMenuItem1.Name = "ContabilidadToolStripMenuItem1"
-        Me.ContabilidadToolStripMenuItem1.Size = New System.Drawing.Size(225, 26)
+        Me.ContabilidadToolStripMenuItem1.Size = New System.Drawing.Size(200, 26)
         Me.ContabilidadToolStripMenuItem1.Text = "Contabilidad"
         '
         'CatalogoDeCuentasToolStripMenuItem
@@ -112,14 +112,14 @@ Partial Class MDIPrincipal
         'PeríodoContableToolStripMenuItem
         '
         Me.PeríodoContableToolStripMenuItem.Name = "PeríodoContableToolStripMenuItem"
-        Me.PeríodoContableToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
+        Me.PeríodoContableToolStripMenuItem.Size = New System.Drawing.Size(200, 26)
         Me.PeríodoContableToolStripMenuItem.Text = "Período contable"
         '
         'BancosToolStripMenuItem
         '
         Me.BancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IngresoDeBancosToolStripMenuItem})
         Me.BancosToolStripMenuItem.Name = "BancosToolStripMenuItem"
-        Me.BancosToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
+        Me.BancosToolStripMenuItem.Size = New System.Drawing.Size(200, 26)
         Me.BancosToolStripMenuItem.Text = "Bancos"
         '
         'IngresoDeBancosToolStripMenuItem
@@ -150,8 +150,8 @@ Partial Class MDIPrincipal
         'ConsiliaciónBancariaToolStripMenuItem1
         '
         Me.ConsiliaciónBancariaToolStripMenuItem1.Name = "ConsiliaciónBancariaToolStripMenuItem1"
-        Me.ConsiliaciónBancariaToolStripMenuItem1.Size = New System.Drawing.Size(225, 26)
-        Me.ConsiliaciónBancariaToolStripMenuItem1.Text = "Consiliación Bancaria"
+        Me.ConsiliaciónBancariaToolStripMenuItem1.Size = New System.Drawing.Size(200, 26)
+        Me.ConsiliaciónBancariaToolStripMenuItem1.Text = "Extracto Bancario"
         '
         'ToolStripMenuItem1
         '
@@ -163,14 +163,14 @@ Partial Class MDIPrincipal
         'ReportesDeContabilidadToolStripMenuItem
         '
         Me.ReportesDeContabilidadToolStripMenuItem.Name = "ReportesDeContabilidadToolStripMenuItem"
-        Me.ReportesDeContabilidadToolStripMenuItem.Size = New System.Drawing.Size(293, 26)
+        Me.ReportesDeContabilidadToolStripMenuItem.Size = New System.Drawing.Size(254, 26)
         Me.ReportesDeContabilidadToolStripMenuItem.Text = "Reportes de Contabilidad"
         '
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(293, 26)
-        Me.ReportesToolStripMenuItem.Text = " Reportes Conciliación bancaria"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(254, 26)
+        Me.ReportesToolStripMenuItem.Text = "Conciliacion Bancaria"
         '
         'AyudaToolStripMenuItem
         '
@@ -207,11 +207,11 @@ Partial Class MDIPrincipal
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(978, 453)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(217, 44)
+        Me.Label1.Size = New System.Drawing.Size(205, 44)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "FINANZAS"
         '
