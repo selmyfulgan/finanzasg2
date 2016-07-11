@@ -107,6 +107,7 @@
     <Compile Include="Bancos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="claseconexion.vb" />
     <Compile Include="CrearCuenta.Designer.vb">
       <DependentUpon>CrearCuenta.vb</DependentUpon>
     </Compile>
