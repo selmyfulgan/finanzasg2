@@ -49,6 +49,7 @@ Partial Class MDIPrincipal
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MoviemientoBancarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -124,7 +125,7 @@ Partial Class MDIPrincipal
         '
         'IngresoDeBancosToolStripMenuItem
         '
-        Me.IngresoDeBancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BancosToolStripMenuItem1, Me.TipoMovimientoToolStripMenuItem, Me.CreaciònDeCuentasToolStripMenuItem})
+        Me.IngresoDeBancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BancosToolStripMenuItem1, Me.TipoMovimientoToolStripMenuItem, Me.CreaciònDeCuentasToolStripMenuItem, Me.MoviemientoBancarioToolStripMenuItem})
         Me.IngresoDeBancosToolStripMenuItem.Name = "IngresoDeBancosToolStripMenuItem"
         Me.IngresoDeBancosToolStripMenuItem.Size = New System.Drawing.Size(191, 26)
         Me.IngresoDeBancosToolStripMenuItem.Text = "Mantenimientos"
@@ -132,19 +133,19 @@ Partial Class MDIPrincipal
         'BancosToolStripMenuItem1
         '
         Me.BancosToolStripMenuItem1.Name = "BancosToolStripMenuItem1"
-        Me.BancosToolStripMenuItem1.Size = New System.Drawing.Size(219, 26)
+        Me.BancosToolStripMenuItem1.Size = New System.Drawing.Size(234, 26)
         Me.BancosToolStripMenuItem1.Text = "Bancos"
         '
         'TipoMovimientoToolStripMenuItem
         '
         Me.TipoMovimientoToolStripMenuItem.Name = "TipoMovimientoToolStripMenuItem"
-        Me.TipoMovimientoToolStripMenuItem.Size = New System.Drawing.Size(219, 26)
+        Me.TipoMovimientoToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
         Me.TipoMovimientoToolStripMenuItem.Text = "Tipo Movimiento"
         '
         'CreaciònDeCuentasToolStripMenuItem
         '
         Me.CreaciònDeCuentasToolStripMenuItem.Name = "CreaciònDeCuentasToolStripMenuItem"
-        Me.CreaciònDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(219, 26)
+        Me.CreaciònDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
         Me.CreaciònDeCuentasToolStripMenuItem.Text = "Creaciòn de Cuentas"
         '
         'ConsiliaciónBancariaToolStripMenuItem1
@@ -215,6 +216,12 @@ Partial Class MDIPrincipal
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "FINANZAS"
         '
+        'MoviemientoBancarioToolStripMenuItem
+        '
+        Me.MoviemientoBancarioToolStripMenuItem.Name = "MoviemientoBancarioToolStripMenuItem"
+        Me.MoviemientoBancarioToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
+        Me.MoviemientoBancarioToolStripMenuItem.Text = "Moviemiento Bancario"
+        '
         'MDIPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -264,4 +271,5 @@ Partial Class MDIPrincipal
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents AyudaToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents Label1 As Label
+    Friend WithEvents MoviemientoBancarioToolStripMenuItem As ToolStripMenuItem
 End Class

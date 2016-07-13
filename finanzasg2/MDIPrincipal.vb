@@ -107,4 +107,9 @@ Public Class MDIPrincipal
         Dim CCnt As New CrearCuenta()
         CCnt.Show()
     End Sub
+
+    Private Sub MoviemientoBancarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MoviemientoBancarioToolStripMenuItem.Click
+        Dim Cm As New Movimientos()
+        Cm.Show()
+    End Sub
 End Class

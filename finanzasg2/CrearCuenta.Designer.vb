@@ -24,7 +24,6 @@ Partial Class CrearCuenta
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CrearCuenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -35,6 +34,7 @@ Partial Class CrearCuenta
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -49,15 +49,6 @@ Partial Class CrearCuenta
         Me.GroupBox2.Size = New System.Drawing.Size(593, 67)
         Me.GroupBox2.TabIndex = 17
         Me.GroupBox2.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(345, 22)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(177, 39)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Solicitar Apertura"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -98,6 +89,7 @@ Partial Class CrearCuenta
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Pago Clientes"})
         Me.ComboBox2.Location = New System.Drawing.Point(182, 78)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(270, 24)
@@ -147,10 +139,22 @@ Partial Class CrearCuenta
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Bac"})
         Me.ComboBox1.Location = New System.Drawing.Point(182, 38)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(270, 24)
         Me.ComboBox1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.Window
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(453, 6)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(69, 62)
+        Me.Button1.TabIndex = 6
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'CrearCuenta
         '
@@ -169,7 +173,6 @@ Partial Class CrearCuenta
     End Sub
 
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
@@ -180,4 +183,5 @@ Partial Class CrearCuenta
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Button1 As Button
 End Class

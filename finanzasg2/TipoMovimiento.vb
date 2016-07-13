@@ -16,13 +16,13 @@ Public Class TipoMovimiento
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If (TextBox2.Text = "" Or TextBox1.Text = "") Then
-            MsgBox("llene por lo menos el campo 1")
-        Else
-            MsgBox(TextBox2.Text)
-            'cn.Open()
-            'cmd.CommandText = ""
-        End If
+        Dim TipoMov As String = TextBox2.Text
+        Dim TipoTrans As String = TextBox1.Text
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        dss = con.insertaMov("insert into db2.dbo.tbl_mf_tipo_movimiento (tpm_descripcion,tpm_tipo_trans,id_estado) values('" & TextBox2.Text & "','1','1')")
+
+        MsgBox("Se ingreso exitosamente")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

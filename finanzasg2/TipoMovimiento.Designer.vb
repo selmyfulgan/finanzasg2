@@ -24,8 +24,6 @@ Partial Class TipoMovimiento
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TipoMovimiento))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -41,8 +39,6 @@ Partial Class TipoMovimiento
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.CheckBox2)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
@@ -55,45 +51,25 @@ Partial Class TipoMovimiento
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingrese la entidad bancaria"
         '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(354, 160)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(111, 21)
-        Me.CheckBox2.TabIndex = 20
-        Me.CheckBox2.Text = "no habilitado"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(251, 160)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(91, 21)
-        Me.CheckBox1.TabIndex = 19
-        Me.CheckBox1.Text = "habilitado"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(59, 49)
+        Me.Label3.Location = New System.Drawing.Point(142, 104)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(165, 17)
+        Me.Label3.Size = New System.Drawing.Size(82, 17)
         Me.Label3.TabIndex = 18
-        Me.Label3.Text = "Ingrese tipo moviemiento"
+        Me.Label3.Text = "Descripcion"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(251, 46)
+        Me.TextBox2.Location = New System.Drawing.Point(251, 99)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(214, 22)
         Me.TextBox2.TabIndex = 17
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(251, 95)
+        Me.TextBox1.Location = New System.Drawing.Point(251, 56)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(214, 22)
         Me.TextBox1.TabIndex = 3
@@ -101,7 +77,7 @@ Partial Class TipoMovimiento
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(87, 95)
+        Me.Label2.Location = New System.Drawing.Point(87, 56)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(137, 17)
         Me.Label2.TabIndex = 2
@@ -110,7 +86,7 @@ Partial Class TipoMovimiento
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(59, 49)
+        Me.Label1.Location = New System.Drawing.Point(59, 102)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(0, 17)
         Me.Label1.TabIndex = 1
@@ -171,8 +147,6 @@ Partial Class TipoMovimiento
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox2 As GroupBox
 End Class
