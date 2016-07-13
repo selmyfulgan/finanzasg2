@@ -1,5 +1,6 @@
 ﻿Imports System.Data.OleDb
 
+
 Public Class frExtracto
 
 
@@ -37,6 +38,8 @@ Public Class frExtracto
                 conexion.Close()
 
                 DataGridView1.AllowUserToAddRows = False
+
+
             Catch ex As Exception
                 MessageBox.Show("Error, Verificar el archivo o el nombre de la hoja", ex.Message)
             End Try
@@ -48,6 +51,14 @@ Public Class frExtracto
     Private Sub Cargar_Click(sender As Object, e As EventArgs) Handles Cargar.Click
 
 
+
+    End Sub
+
+    Private Sub frExtracto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim hoja As String
         Dim dialog As New OpenFileDialog()
         dialog.Filter = "Archivos de Excel (*.xls;*.xlsx)|*.xls;*.xlsx"
@@ -64,25 +75,11 @@ Public Class frExtracto
             txtArchivo.Text = dialog.FileName
             hoja = txtHoja.Text
             LlenarGrid(txtArchivo.Text, hoja)
-
-
-
             DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+
+
+
+
         End If
     End Sub
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 End Class
