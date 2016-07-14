@@ -17,12 +17,11 @@ Public Class TipoMovimiento
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim TipoMov As String = TextBox2.Text
-        Dim TipoTrans As String = TextBox1.Text
-        Dim dss As DataSet
-        Dim con As New claseconexion
-        dss = con.insertaMov("insert into db2.dbo.tbl_mf_tipo_movimiento (tpm_descripcion,tpm_tipo_trans,id_estado) values('" & TextBox2.Text & "','1','1')")
+        Dim Desc As String = TextBox1.Text
+        Dim consulta As New fn_general
+        Dim content As String
+        content = consulta.tipo_movimiento(TipoMov, Desc)
 
-        MsgBox("Se ingreso exitosamente")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -30,10 +29,16 @@ Public Class TipoMovimiento
     End Sub
 
     Private Sub TipoMovimiento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'cmd.Connection = cn
+        'TODO: esta línea de código carga datos en la tabla 'DB2DataSet1.tbl_mf_tipo_movimiento' Puede moverla o quitarla según sea necesario.
+        Me.Tbl_mf_tipo_movimientoTableAdapter.Fill(Me.DB2DataSet1.tbl_mf_tipo_movimiento)
+
     End Sub
 
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
 End Class

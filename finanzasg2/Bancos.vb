@@ -27,9 +27,10 @@
         Dim CBEmpresa As Integer = 1 'ComboBox1.Text
         Dim TBEntidad As Integer = 2 'TextBox1.Text
         Dim DTPfecha As Date = "2016-07-13" 'DateTimePicker1.Text
+        Dim la_tabla As String = "db2.dbo.tbl_mf_bancos"
         Dim dss As DataSet
         Dim con As New claseconexion
-        dss = con.Insertar("insert into db2.dbo.tbl_mf_bancos(id_empresa,id_banco_1,bc_id_externo,bc_fecha_cierre,bc_fecha,id_estado) values (" & CBEmpresa & ",2,3,'','2016-07-11',1 )")
+        dss = con.inserta("insert into db2.dbo.tbl_mf_bancos(id_empresa,id_banco_1,bc_id_externo,bc_fecha_cierre,bc_fecha,id_estado) values (" & CBEmpresa & ",2,3,'','2016-07-11',1 )", la_tabla)
 
         MsgBox("Se ingreso exitosamente")
 
