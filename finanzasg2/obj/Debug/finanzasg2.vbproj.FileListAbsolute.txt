@@ -59,6 +59,7 @@ C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\o
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.CrearCuenta.resources
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.DetalleUsuarios.resources
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.Login.resources
+C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.Movimientos.resources
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.panelConciliacion.resources
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.MDIPrincipal.resources
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.Resources.resources
@@ -68,5 +69,3 @@ C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\o
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.exe
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.xml
 C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.pdb
-C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.vbprojResolveAssemblyReference.cache
-C:\Users\Selmy\Documents\Visual Studio 2015\Projects\seminario_2016\finanzasg2\obj\Debug\finanzasg2.Movimientos.resources

@@ -46,13 +46,30 @@
 
     End Function
     Public Function cb_entidad()
-        Dim la_tabla As String = "db2.dbo.tbl_mf_bancos"
+        Dim la_tabla As String = "db2.dbo.tbl_mf_empresa"
         Dim dss As DataSet
         Dim con As New claseconexion
         dss = con.llena_combo_box("select id_empresa, eps_razon_social from DB2.dbo.tbl_mf_empresa")
         'MsgBox("Se ingreso exitosamente")
         Return dss
     End Function
+    Public Function CBBancos()
+        'Dim la_tabla As String = "db2.dbo.tbl_mf_bancos"
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        dss = con.llena_combo_box_bancos("select id_banco, id_banco_1 from DB2.dbo.tbl_mf_bancos")
+        'MsgBox("Se ingreso exitosamente")
+        Return dss
+    End Function
+    Public Function CBTipoCuenta()
+        'Dim la_tabla As String = "db2.dbo.tbl_mf_bancos"
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        dss = con.llena_combo_box_tipo_cuenta("select id_tipo_cuenta, tpc_descripcion from DB2.dbo.tbl_mf_tipo_cuenta")
+        'MsgBox("Se ingreso exitosamente")
+        Return dss
+    End Function
+
     Public Function cb_entidad_gbBancos()
         Dim la_tabla As String = "listado_bancos"
         Dim dss As DataSet
@@ -62,7 +79,7 @@
         Return dss
     End Function
     Public Function DGVBancos()
-        Dim la_tabla As String = "listado_cuentas"
+        Dim la_tabla As String = "listado_bancos"
         Dim dss As DataSet
         Dim con As New claseconexion
         dss = con.consultar("select b.id_banco_1 as Banco, tc.tpc_descripcion as Descripciòn,c.cta_num_cuenta as Cuenta,c.cta_fecha as Apertura,c.id_estado as Estado from db2.dbo.tbl_mf_cuenta c inner join db2.dbo.tbl_mf_bancos b on c.id_banco = b.id_banco inner join db2.dbo.tbl_mf_tipo_cuenta tc on c.id_tipo_cuenta = tc.id_tipo_cuenta ", la_tabla)

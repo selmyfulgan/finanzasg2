@@ -20,7 +20,6 @@ Public Class claseconexion
         Return abreconexion
     End Function
 
-
     Public Function consultar(consulta, la_tabla)
         Dim ds As New DataSet
         Try
@@ -82,6 +81,37 @@ Public Class claseconexion
 
         Return ds
 
+    End Function
+    Public Function llena_combo_box_bancos(ByVal cbConsulta As String)
+        Dim ds As New DataSet
+
+        Try
+            'Dim Comando As New SqlCommand(consulta, abrirconexion())
+            Debug.WriteLine(cbConsulta)
+            Dim adapter As New SqlDataAdapter(cbConsulta, abrirconexion())
+            adapter.Fill(ds, "DB2.dbo.tbl_mf_bancos")
+            'Comando.ExecuteNonQuery()
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        End Try
+
+        Return ds
+    End Function
+
+    Public Function llena_combo_box_tipo_cuenta(ByVal cbConsulta As String)
+        Dim ds As New DataSet
+
+        Try
+            'Dim Comando As New SqlCommand(consulta, abrirconexion())
+            Debug.WriteLine(cbConsulta)
+            Dim adapter As New SqlDataAdapter(cbConsulta, abrirconexion())
+            adapter.Fill(ds, "DB2.dbo.tbl_mf_tipo_cuenta")
+            'Comando.ExecuteNonQuery()
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        End Try
+
+        Return ds
     End Function
 End Class
 
