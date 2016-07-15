@@ -9,7 +9,15 @@
 
     Private Sub Bancos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'DataSet1.tbl_mf_empresa' Puede moverla o quitarla según sea necesario.
-        Me.Tbl_mf_empresaTableAdapter3.Fill(Me.DataSet1.tbl_mf_empresa)
+        Dim ds As New DataSet
+
+        'Me.Tbl_mf_empresaTableAdapter3.Fill(Me.DataSet1.tbl_mf_empresa)
+        Dim consulta As New fn_general
+
+        ds = consulta.cb_entidad
+        ComboBox1.DataSource = ds.Tables(0)
+        ComboBox1.ValueMember = "id_empresa"
+        ComboBox1.DisplayMember = "eps_razon_social"
 
 
     End Sub
@@ -24,15 +32,23 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim CBEmpresa As Integer = 1 'ComboBox1.Text
-        Dim TBEntidad As Integer = 2 'TextBox1.Text
-        Dim DTPfecha As Date = "2016-07-13" 'DateTimePicker1.Text
-        Dim la_tabla As String = "db2.dbo.tbl_mf_bancos"
-        Dim dss As DataSet
-        Dim con As New claseconexion
-        dss = con.inserta("insert into db2.dbo.tbl_mf_bancos(id_empresa,id_banco_1,bc_id_externo,bc_fecha_cierre,bc_fecha,id_estado) values (" & CBEmpresa & ",2,3,'','2016-07-11',1 )", la_tabla)
+        Dim CBEmpresa As Integer = ComboBox1.SelectedValue
+        Dim TBBanco As String = TextBox1.Text
+        Dim DFecha As Date = DateTimePicker1.Value
 
-        MsgBox("Se ingreso exitosamente")
+        Dim consulta As New fn_general
+        Dim content As String
+        content = consulta.manejo_banco(CBEmpresa, TBBanco, DFecha)
+
+        TextBox1.Text = ""
+        Dim ds As New DataSet
+
+        'Me.Tbl_mf_empresaTableAdapter3.Fill(Me.DataSet1.tbl_mf_empresa)
+        Dim consulta2 As New fn_general
+
+        ds = consulta2.cb_entidad_gbBancos
+        DataGridView1.DataSource = ds.Tables(0)
+        'DataGridView1.Visible = True
 
     End Sub
 
@@ -46,6 +62,24 @@
         Catch ex As System.Exception
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim ds As New DataSet
+        Dim indice As Integer
+        indice = DataGridView1.CurrentCell.RowIndex
+        Dim dato As Integer = DataGridView1.Rows.SharedRow(indice).Cells(0).Value
+        Debug.WriteLine(dato)
+
+        Dim consulta2 As New fn_general
+        ds = consulta2.cb_entidad_delete(dato)
+        ds = consulta2.cb_entidad_gbBancos
+        DataGridView1.DataSource = ds.Tables(0)
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged_2(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
 
     End Sub
 End Class

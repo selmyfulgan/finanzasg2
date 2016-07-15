@@ -25,6 +25,7 @@ Partial Class Bancos
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Bancos))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -46,6 +47,8 @@ Partial Class Bancos
         Me.DataSet2 = New finanzasg2.DataSet2()
         Me.TblmfempresaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_mf_empresaTableAdapter1 = New finanzasg2.DataSet2TableAdapters.tbl_mf_empresaTableAdapter()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox2.SuspendLayout()
         CType(Me.TblmfempresaBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,24 +59,37 @@ Partial Class Bancos
         CType(Me.TblmfempresaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblmfempresaBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Location = New System.Drawing.Point(-3, 240)
+        Me.GroupBox2.Location = New System.Drawing.Point(2, 471)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(555, 77)
+        Me.GroupBox2.Size = New System.Drawing.Size(639, 89)
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(419, 15)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(59, 62)
+        Me.Button1.TabIndex = 6
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Button3
         '
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Location = New System.Drawing.Point(419, 7)
+        Me.Button3.Location = New System.Drawing.Point(484, 15)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(59, 62)
         Me.Button3.TabIndex = 4
@@ -84,7 +100,7 @@ Partial Class Bancos
         Me.Button4.BackColor = System.Drawing.SystemColors.Window
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Location = New System.Drawing.Point(484, 10)
+        Me.Button4.Location = New System.Drawing.Point(549, 16)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(62, 61)
         Me.Button4.TabIndex = 5
@@ -153,7 +169,7 @@ Partial Class Bancos
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(27, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(71, 47)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(499, 197)
         Me.GroupBox1.TabIndex = 17
@@ -212,12 +228,33 @@ Partial Class Bancos
         '
         Me.Tbl_mf_empresaTableAdapter1.ClearBeforeFill = True
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.DataGridView1)
+        Me.GroupBox3.Location = New System.Drawing.Point(48, 276)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(572, 173)
+        Me.GroupBox3.TabIndex = 18
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Listado Bancos"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(3, 18)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(566, 152)
+        Me.DataGridView1.TabIndex = 0
+        '
         'Bancos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(555, 317)
+        Me.ClientSize = New System.Drawing.Size(676, 560)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "Bancos"
@@ -233,6 +270,8 @@ Partial Class Bancos
         CType(Me.TblmfempresaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblmfempresaBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -259,4 +298,7 @@ Partial Class Bancos
     Friend WithEvents Tbl_mf_empresaTableAdapter2 As DataSet3TableAdapters.tbl_mf_empresaTableAdapter
     Friend WithEvents TblmfempresaBindingSource3 As BindingSource
     Friend WithEvents Tbl_mf_empresaTableAdapter3 As DataSet1TableAdapters.tbl_mf_empresaTableAdapter
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button1 As Button
 End Class

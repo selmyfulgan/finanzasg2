@@ -22,6 +22,13 @@ Public Class TipoMovimiento
         Dim content As String
         content = consulta.tipo_movimiento(TipoMov, Desc)
 
+        Dim consulta2 As New fn_general
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        Dim ds As New DataSet
+        ds = consulta2.selecciona_tipo_movimiento
+        DataGridView1.DataSource = ds.Tables(0)
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -30,7 +37,7 @@ Public Class TipoMovimiento
 
     Private Sub TipoMovimiento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'DB2DataSet1.tbl_mf_tipo_movimiento' Puede moverla o quitarla según sea necesario.
-        Me.Tbl_mf_tipo_movimientoTableAdapter.Fill(Me.DB2DataSet1.tbl_mf_tipo_movimiento)
+
 
     End Sub
 
@@ -38,7 +45,20 @@ Public Class TipoMovimiento
 
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim ds As New DataSet
+        Dim indice As Integer
+        indice = DataGridView1.CurrentCell.RowIndex
+        Dim dato As Integer = DataGridView1.Rows.SharedRow(indice).Cells(0).Value
+        Debug.WriteLine(dato)
+
+        Dim consulta2 As New fn_general
+        ds = consulta2.cb_tipo_mov_delete(dato)
+        ds = consulta2.selecciona_tipo_movimiento
+        DataGridView1.DataSource = ds.Tables(0)
     End Sub
 End Class

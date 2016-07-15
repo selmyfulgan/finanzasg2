@@ -20,17 +20,6 @@ Public Class claseconexion
         Return abreconexion
     End Function
 
-    'Public Function Insertar(ByVal inserta As String)
-    'Dim ds As New DataSet
-    'Try
-    'Dim Comando As New SqlCommand(inserta, abrirconexion())
-    '       Comando.ExecuteNonQuery()
-    'Catch ex As Exception
-    '       Debug.WriteLine(ex.Message)
-    'End Try
-    '
-    'Return ds
-    'End Function
 
     Public Function consultar(consulta, la_tabla)
         Dim ds As New DataSet
