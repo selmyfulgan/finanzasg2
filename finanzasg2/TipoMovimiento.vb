@@ -16,13 +16,19 @@ Public Class TipoMovimiento
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If (TextBox2.Text = "" Or TextBox1.Text = "") Then
-            MsgBox("llene por lo menos el campo 1")
-        Else
-            MsgBox(TextBox2.Text)
-            'cn.Open()
-            'cmd.CommandText = ""
-        End If
+        Dim TipoMov As String = TextBox2.Text
+        Dim Desc As String = TextBox1.Text
+        Dim consulta As New fn_general
+        Dim content As String
+        content = consulta.tipo_movimiento(TipoMov, Desc)
+
+        Dim consulta2 As New fn_general
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        Dim ds As New DataSet
+        ds = consulta2.selecciona_tipo_movimiento
+        DataGridView1.DataSource = ds.Tables(0)
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -30,10 +36,29 @@ Public Class TipoMovimiento
     End Sub
 
     Private Sub TipoMovimiento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'cmd.Connection = cn
+        'TODO: esta línea de código carga datos en la tabla 'DB2DataSet1.tbl_mf_tipo_movimiento' Puede moverla o quitarla según sea necesario.
+
+
     End Sub
 
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim ds As New DataSet
+        Dim indice As Integer
+        indice = DataGridView1.CurrentCell.RowIndex
+        Dim dato As Integer = DataGridView1.Rows.SharedRow(indice).Cells(0).Value
+        Debug.WriteLine(dato)
+
+        Dim consulta2 As New fn_general
+        ds = consulta2.cb_tipo_mov_delete(dato)
+        ds = consulta2.selecciona_tipo_movimiento
+        DataGridView1.DataSource = ds.Tables(0)
     End Sub
 End Class
