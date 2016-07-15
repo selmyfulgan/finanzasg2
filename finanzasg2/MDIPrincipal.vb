@@ -112,4 +112,9 @@ Public Class MDIPrincipal
         Dim Cm As New Movimientos()
         Cm.Show()
     End Sub
+
+    Private Sub TipoDeCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipoDeCuentaToolStripMenuItem.Click
+        Dim TC As New TipoCuenta()
+        TC.Show()
+    End Sub
 End Class
