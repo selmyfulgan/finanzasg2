@@ -22,8 +22,16 @@ Partial Class TipoCuenta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'TipoCuenta
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(688, 479)
+        Me.Name = "TipoCuenta"
+        Me.Text = "Tipo de Cuenta"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

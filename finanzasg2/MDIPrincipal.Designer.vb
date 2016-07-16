@@ -33,24 +33,28 @@ Partial Class MDIPrincipal
         Me.ContabilidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContabilidadToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CatalogoDeCuentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PeríodoContableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BancosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IngresoDeBancosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BancosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TipoMovimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TipoDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CreaciònDeCuentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MoviemientoBancarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsiliaciónBancariaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MovimientosBancariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesDeContabilidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesMovimientosBancariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SeguridadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MantenimientoDeUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TipoDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PeriodoContableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PolizaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TipoPolizaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -83,7 +87,7 @@ Partial Class MDIPrincipal
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContabilidadToolStripMenuItem, Me.ToolStripMenuItem1, Me.AyudaToolStripMenuItem, Me.SeguridadToolStripMenuItem, Me.AcercaDeToolStripMenuItem, Me.AyudaToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContabilidadToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.ToolStripMenuItem1, Me.SeguridadToolStripMenuItem, Me.AcercaDeToolStripMenuItem, Me.AyudaToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
@@ -93,14 +97,14 @@ Partial Class MDIPrincipal
         '
         'ContabilidadToolStripMenuItem
         '
-        Me.ContabilidadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContabilidadToolStripMenuItem1, Me.PeríodoContableToolStripMenuItem, Me.BancosToolStripMenuItem, Me.ConsiliaciónBancariaToolStripMenuItem1})
+        Me.ContabilidadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContabilidadToolStripMenuItem1, Me.BancosToolStripMenuItem, Me.ConsiliaciónBancariaToolStripMenuItem1})
         Me.ContabilidadToolStripMenuItem.Name = "ContabilidadToolStripMenuItem"
         Me.ContabilidadToolStripMenuItem.Size = New System.Drawing.Size(88, 24)
         Me.ContabilidadToolStripMenuItem.Text = "Catálogos"
         '
         'ContabilidadToolStripMenuItem1
         '
-        Me.ContabilidadToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatalogoDeCuentasToolStripMenuItem})
+        Me.ContabilidadToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatalogoDeCuentasToolStripMenuItem, Me.PeriodoContableToolStripMenuItem, Me.PolizaToolStripMenuItem, Me.TipoPolizaToolStripMenuItem})
         Me.ContabilidadToolStripMenuItem1.Name = "ContabilidadToolStripMenuItem1"
         Me.ContabilidadToolStripMenuItem1.Size = New System.Drawing.Size(225, 26)
         Me.ContabilidadToolStripMenuItem1.Text = "Contabilidad"
@@ -111,12 +115,6 @@ Partial Class MDIPrincipal
         Me.CatalogoDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(222, 26)
         Me.CatalogoDeCuentasToolStripMenuItem.Text = "Catalogo de Cuentas"
         '
-        'PeríodoContableToolStripMenuItem
-        '
-        Me.PeríodoContableToolStripMenuItem.Name = "PeríodoContableToolStripMenuItem"
-        Me.PeríodoContableToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
-        Me.PeríodoContableToolStripMenuItem.Text = "Período contable"
-        '
         'BancosToolStripMenuItem
         '
         Me.BancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IngresoDeBancosToolStripMenuItem})
@@ -126,7 +124,7 @@ Partial Class MDIPrincipal
         '
         'IngresoDeBancosToolStripMenuItem
         '
-        Me.IngresoDeBancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BancosToolStripMenuItem1, Me.TipoMovimientoToolStripMenuItem, Me.TipoDeCuentaToolStripMenuItem, Me.CreaciònDeCuentasToolStripMenuItem, Me.MoviemientoBancarioToolStripMenuItem})
+        Me.IngresoDeBancosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BancosToolStripMenuItem1, Me.TipoMovimientoToolStripMenuItem, Me.TipoDeCuentaToolStripMenuItem, Me.CreaciònDeCuentasToolStripMenuItem})
         Me.IngresoDeBancosToolStripMenuItem.Name = "IngresoDeBancosToolStripMenuItem"
         Me.IngresoDeBancosToolStripMenuItem.Size = New System.Drawing.Size(191, 26)
         Me.IngresoDeBancosToolStripMenuItem.Text = "Mantenimientos"
@@ -134,26 +132,26 @@ Partial Class MDIPrincipal
         'BancosToolStripMenuItem1
         '
         Me.BancosToolStripMenuItem1.Name = "BancosToolStripMenuItem1"
-        Me.BancosToolStripMenuItem1.Size = New System.Drawing.Size(234, 26)
+        Me.BancosToolStripMenuItem1.Size = New System.Drawing.Size(219, 26)
         Me.BancosToolStripMenuItem1.Text = "Bancos"
         '
         'TipoMovimientoToolStripMenuItem
         '
         Me.TipoMovimientoToolStripMenuItem.Name = "TipoMovimientoToolStripMenuItem"
-        Me.TipoMovimientoToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
+        Me.TipoMovimientoToolStripMenuItem.Size = New System.Drawing.Size(219, 26)
         Me.TipoMovimientoToolStripMenuItem.Text = "Tipo Movimiento"
+        '
+        'TipoDeCuentaToolStripMenuItem
+        '
+        Me.TipoDeCuentaToolStripMenuItem.Name = "TipoDeCuentaToolStripMenuItem"
+        Me.TipoDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(219, 26)
+        Me.TipoDeCuentaToolStripMenuItem.Text = "Tipo de Cuenta"
         '
         'CreaciònDeCuentasToolStripMenuItem
         '
         Me.CreaciònDeCuentasToolStripMenuItem.Name = "CreaciònDeCuentasToolStripMenuItem"
-        Me.CreaciònDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
+        Me.CreaciònDeCuentasToolStripMenuItem.Size = New System.Drawing.Size(219, 26)
         Me.CreaciònDeCuentasToolStripMenuItem.Text = "Creaciòn de Cuentas"
-        '
-        'MoviemientoBancarioToolStripMenuItem
-        '
-        Me.MoviemientoBancarioToolStripMenuItem.Name = "MoviemientoBancarioToolStripMenuItem"
-        Me.MoviemientoBancarioToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
-        Me.MoviemientoBancarioToolStripMenuItem.Text = "Moviemiento Bancario"
         '
         'ConsiliaciónBancariaToolStripMenuItem1
         '
@@ -161,30 +159,49 @@ Partial Class MDIPrincipal
         Me.ConsiliaciónBancariaToolStripMenuItem1.Size = New System.Drawing.Size(225, 26)
         Me.ConsiliaciónBancariaToolStripMenuItem1.Text = "Consiliación Bancaria"
         '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MovimientosBancariosToolStripMenuItem, Me.ConsultaToolStripMenuItem})
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(79, 24)
+        Me.AyudaToolStripMenuItem.Text = "Procesos"
+        '
+        'MovimientosBancariosToolStripMenuItem
+        '
+        Me.MovimientosBancariosToolStripMenuItem.Name = "MovimientosBancariosToolStripMenuItem"
+        Me.MovimientosBancariosToolStripMenuItem.Size = New System.Drawing.Size(302, 26)
+        Me.MovimientosBancariosToolStripMenuItem.Text = "Movimientos Bancarios"
+        '
+        'ConsultaToolStripMenuItem
+        '
+        Me.ConsultaToolStripMenuItem.Name = "ConsultaToolStripMenuItem"
+        Me.ConsultaToolStripMenuItem.Size = New System.Drawing.Size(302, 26)
+        Me.ConsultaToolStripMenuItem.Text = "Historico Movimientos Bancarios"
+        '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesDeContabilidadToolStripMenuItem, Me.ReportesToolStripMenuItem})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesDeContabilidadToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.ReportesMovimientosBancariosToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(79, 24)
-        Me.ToolStripMenuItem1.Text = "Procesos"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(80, 24)
+        Me.ToolStripMenuItem1.Text = "Reportes"
         '
         'ReportesDeContabilidadToolStripMenuItem
         '
         Me.ReportesDeContabilidadToolStripMenuItem.Name = "ReportesDeContabilidadToolStripMenuItem"
-        Me.ReportesDeContabilidadToolStripMenuItem.Size = New System.Drawing.Size(293, 26)
+        Me.ReportesDeContabilidadToolStripMenuItem.Size = New System.Drawing.Size(301, 26)
         Me.ReportesDeContabilidadToolStripMenuItem.Text = "Reportes de Contabilidad"
         '
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(293, 26)
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(301, 26)
         Me.ReportesToolStripMenuItem.Text = " Reportes Conciliación bancaria"
         '
-        'AyudaToolStripMenuItem
+        'ReportesMovimientosBancariosToolStripMenuItem
         '
-        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(80, 24)
-        Me.AyudaToolStripMenuItem.Text = "Reportes"
+        Me.ReportesMovimientosBancariosToolStripMenuItem.Name = "ReportesMovimientosBancariosToolStripMenuItem"
+        Me.ReportesMovimientosBancariosToolStripMenuItem.Size = New System.Drawing.Size(301, 26)
+        Me.ReportesMovimientosBancariosToolStripMenuItem.Text = "Reportes Movimientos Bancarios"
         '
         'SeguridadToolStripMenuItem
         '
@@ -223,11 +240,23 @@ Partial Class MDIPrincipal
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "FINANZAS"
         '
-        'TipoDeCuentaToolStripMenuItem
+        'PeriodoContableToolStripMenuItem
         '
-        Me.TipoDeCuentaToolStripMenuItem.Name = "TipoDeCuentaToolStripMenuItem"
-        Me.TipoDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(234, 26)
-        Me.TipoDeCuentaToolStripMenuItem.Text = "Tipo de Cuenta"
+        Me.PeriodoContableToolStripMenuItem.Name = "PeriodoContableToolStripMenuItem"
+        Me.PeriodoContableToolStripMenuItem.Size = New System.Drawing.Size(222, 26)
+        Me.PeriodoContableToolStripMenuItem.Text = "Periodo Contable"
+        '
+        'PolizaToolStripMenuItem
+        '
+        Me.PolizaToolStripMenuItem.Name = "PolizaToolStripMenuItem"
+        Me.PolizaToolStripMenuItem.Size = New System.Drawing.Size(222, 26)
+        Me.PolizaToolStripMenuItem.Text = "Poliza"
+        '
+        'TipoPolizaToolStripMenuItem
+        '
+        Me.TipoPolizaToolStripMenuItem.Name = "TipoPolizaToolStripMenuItem"
+        Me.TipoPolizaToolStripMenuItem.Size = New System.Drawing.Size(222, 26)
+        Me.TipoPolizaToolStripMenuItem.Text = "Tipo Poliza"
         '
         'MDIPrincipal
         '
@@ -267,7 +296,6 @@ Partial Class MDIPrincipal
     Friend WithEvents ReportesDeContabilidadToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CatalogoDeCuentasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PeríodoContableToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BancosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SeguridadToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MantenimientoDeUsuariosToolStripMenuItem As ToolStripMenuItem
@@ -278,6 +306,11 @@ Partial Class MDIPrincipal
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents AyudaToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents Label1 As Label
-    Friend WithEvents MoviemientoBancarioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TipoDeCuentaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MovimientosBancariosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsultaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesMovimientosBancariosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PeriodoContableToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PolizaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TipoPolizaToolStripMenuItem As ToolStripMenuItem
 End Class

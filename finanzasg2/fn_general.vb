@@ -15,6 +15,16 @@
 
         End If
     End Function
+    Public Function ingresa_usuarios(TBusu, TBpass, TBcorreo, CBpermiso, DFecha, CBmodulo)
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        Dim fecha As String = DFecha.Year & "/" & DFecha.Month & "/" & DFecha.Day
+        Dim la_tabla As String = "DB2.dbo.tbl_mf_usuarios"
+        dss = con.inserta("insert into db2.dbo.tbl_mf_usuarios (user_nombre,user_password,user_estado,user_correo,user_fecha_ingreso,id_modulo,id_permisos) values ('" & TBusu & "','" & TBpass & "','1','" & TBcorreo & "','" & fecha & "','" & CBmodulo & "','" & CBpermiso & "')", la_tabla)
+        MsgBox("Se ha guardado con exito")
+
+
+    End Function
 
     Public Function tipo_movimiento(TipoMov, Desc)
         Dim dss As DataSet
@@ -23,6 +33,7 @@
         dss = con.inserta("insert into db2.dbo.tbl_mf_tipo_movimiento (tpm_descripcion,tpm_tipo_trans,id_estado) values('" & TipoMov & "','" & Desc & "','1')", la_tabla)
         MsgBox("Se ha guardado con exito")
     End Function
+
 
     Public Function cuenta(CBBancos, CBTipoCuenta, TBNumCuenta, DTApertura)
         Dim dss As DataSet
@@ -78,6 +89,14 @@
         'MsgBox("Se ingreso exitosamente")
         Return dss
     End Function
+
+    Public Function cb_usuarios_sistema()
+        Dim la_tabla As String = "listado_sistema"
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        dss = con.consultar_detalle_usuario("select u.id_usuarios as Correlativo,u.user_nombre as Nombre, u.user_password as Password, u.user_correo as Corrreo, u.user_fecha_ingreso as Ingreso, m.id_modulo as Modulo, p.id_permisos as Permiso from db2.dbo.tbl_mf_usuarios u inner join db2.dbo.tbl_mf_modulo m on u.id_modulo = m.id_modulo inner join db2.dbo.tbl_mf_permisos	p on u.id_permisos = p.id_permisos ")
+        Return dss
+    End Function
     Public Function DGVBancos()
         Dim la_tabla As String = "listado_bancos"
         Dim dss As DataSet
@@ -108,6 +127,29 @@
         Dim con As New claseconexion
         Dim la_tabla As String = "db2.dbo.tbl_mf_tipo_movimiento"
         dss = con.inserta("DELETE FROM db2.dbo.tbl_mf_tipo_movimiento where id_tipo_movimiento = " & CBEmpresa & " ", la_tabla)
+        MsgBox("Se ha eliminado con exito")
+    End Function
+    Public Function cb_permisos()
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        dss = con.llena_combo_box("select id_permisos, per_nombre from DB2.dbo.tbl_mf_permisos")
+        'MsgBox("Se ingreso exitosamente")
+        Return dss
+    End Function
+
+    Public Function cb_modulo()
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        dss = con.llena_combo_box_modulo("select id_modulo, mod_descripcion from DB2.dbo.tbl_mf_modulo")
+        'MsgBox("Se ingreso exitosamente")
+        Return dss
+    End Function
+
+    Public Function cb_usuario_delete(CBEmpresa As Integer)
+        Dim dss As DataSet
+        Dim con As New claseconexion
+        Dim la_tabla As String = "db2.dbo.tbl_mf_usuarios"
+        dss = con.inserta("DELETE FROM db2.dbo.tbl_mf_usuarios where id_usuarios = " & CBEmpresa & " ", la_tabla)
         MsgBox("Se ha eliminado con exito")
     End Function
 End Class

@@ -113,6 +113,50 @@ Public Class claseconexion
 
         Return ds
     End Function
+
+    Public Function llena_cb_permisos(ByVal cbConsulta As String)
+        Dim ds As New DataSet
+
+        Try
+            'Dim Comando As New SqlCommand(consulta, abrirconexion())
+            Debug.WriteLine(cbConsulta)
+            Dim adapter As New SqlDataAdapter(cbConsulta, abrirconexion())
+            adapter.Fill(ds, "DB2.dbo.tbl_mf_permisos")
+            'Comando.ExecuteNonQuery()
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        End Try
+
+        Return ds
+    End Function
+    Public Function consultar_detalle_usuario(consulta)
+        Dim ds As New DataSet
+        Try
+            Debug.WriteLine(consulta)
+            Dim adapter As New SqlDataAdapter(consulta, abrirconexion())
+            adapter.Fill(ds, "DB2.dbo.tbl_mf_usuarios")
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        End Try
+
+        Return ds
+    End Function
+
+    Public Function llena_combo_box_modulo(ByVal cbConsulta As String)
+        Dim ds As New DataSet
+
+        Try
+            'Dim Comando As New SqlCommand(consulta, abrirconexion())
+            Debug.WriteLine(cbConsulta)
+            Dim adapter As New SqlDataAdapter(cbConsulta, abrirconexion())
+            adapter.Fill(ds, "DB2.dbo.tbl_mf_modulo")
+            'Comando.ExecuteNonQuery()
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        End Try
+
+        Return ds
+    End Function
 End Class
 
 

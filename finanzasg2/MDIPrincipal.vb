@@ -66,8 +66,9 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub CatalogoDeCuentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatalogoDeCuentasToolStripMenuItem.Click
-        'Dim frmCatalogo As New dll_Catalogo_Cuentas.frmCatalogoCuentas
-        'frmCatalogo.ShowDialog()
+        Dim frmCatalogo As New dll_Catalogo_Cuentas.frmCatalogoCuentas
+        frmCatalogo.idEmpresa = 1
+        frmCatalogo.ShowDialog()
     End Sub
 
     Private Sub ContabilidadToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ContabilidadToolStripMenuItem1.Click
@@ -83,9 +84,9 @@ Public Class MDIPrincipal
         Me.WindowState = FormWindowState.Maximized
     End Sub
 
-    Private Sub PeríodoContableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PeríodoContableToolStripMenuItem.Click
-        Dim frperiodocontable As New dll_periodocontable.frPeriodo()
-        frperiodocontable.Show()
+    Private Sub PeríodoContableToolStripMenuItem_Click(sender As Object, e As EventArgs)
+        ' Dim frperiodocontable As New dll_periodocontable.frPeriodo()
+        'frperiodocontable.Show()
     End Sub
 
     Private Sub MantenimientoDeUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MantenimientoDeUsuariosToolStripMenuItem.Click
@@ -108,13 +109,34 @@ Public Class MDIPrincipal
         CCnt.Show()
     End Sub
 
-    Private Sub MoviemientoBancarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MoviemientoBancarioToolStripMenuItem.Click
-        Dim Cm As New Movimientos()
-        Cm.Show()
+    Private Sub MoviemientoBancarioToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub TipoDeCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipoDeCuentaToolStripMenuItem.Click
         Dim TC As New TipoCuenta()
         TC.Show()
+    End Sub
+
+    Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
+        Dim AB As New AboutBox1()
+        AB.Show()
+    End Sub
+
+    Private Sub MovimientosBancariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MovimientosBancariosToolStripMenuItem.Click
+        Dim Cm As New Movimientos()
+        Cm.Show()
+    End Sub
+
+    Private Sub PeriodoContableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PeriodoContableToolStripMenuItem.Click
+        Dim frperiodocontable As New dll_periodocontable.frCrearPeriodoContable()
+        frperiodocontable.InEmpresa1 = 1
+        frperiodocontable.ShowDialog()
+    End Sub
+
+    Private Sub PolizaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PolizaToolStripMenuItem.Click
+        Dim frpoliza As New Poliza.frTipoPoliza2
+        frpoliza.InEmperesa1 = 1
+        frpoliza.ShowDialog()
     End Sub
 End Class

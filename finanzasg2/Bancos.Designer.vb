@@ -69,9 +69,9 @@ Partial Class Bancos
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Location = New System.Drawing.Point(2, 471)
+        Me.GroupBox2.Location = New System.Drawing.Point(2, 487)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(639, 89)
+        Me.GroupBox2.Size = New System.Drawing.Size(675, 73)
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
         '
@@ -79,7 +79,7 @@ Partial Class Bancos
         '
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(419, 15)
+        Me.Button1.Location = New System.Drawing.Point(441, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(59, 62)
         Me.Button1.TabIndex = 6
@@ -89,7 +89,7 @@ Partial Class Bancos
         '
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Location = New System.Drawing.Point(484, 15)
+        Me.Button3.Location = New System.Drawing.Point(522, 11)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(59, 62)
         Me.Button3.TabIndex = 4
@@ -100,7 +100,7 @@ Partial Class Bancos
         Me.Button4.BackColor = System.Drawing.SystemColors.Window
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Location = New System.Drawing.Point(549, 16)
+        Me.Button4.Location = New System.Drawing.Point(600, 12)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(62, 61)
         Me.Button4.TabIndex = 5
