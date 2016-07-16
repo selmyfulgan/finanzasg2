@@ -155,6 +155,7 @@
     <Compile Include="DetalleUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="fn_general.vb" />
     <Compile Include="TipoCuenta.Designer.vb">
       <DependentUpon>TipoCuenta.vb</DependentUpon>
@@ -164,10 +165,15 @@
     </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
+=======
+    <Compile Include="frExtracto.Designer.vb">
+      <DependentUpon>frExtracto.vb</DependentUpon>
+>>>>>>> master
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="frExtracto.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Movimientos.Designer.vb">
       <DependentUpon>Movimientos.vb</DependentUpon>
     </Compile>
@@ -176,9 +182,12 @@
     </Compile>
     <Compile Include="panelConciliacion.vb">
       <SubType>Form</SubType>
+=======
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+>>>>>>> master
     </Compile>
-    <Compile Include="panelConciliacion.Designer.vb">
-      <DependentUpon>panelConciliacion.vb</DependentUpon>
+    <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cheques.Designer.vb">
@@ -264,15 +273,21 @@
     <EmbeddedResource Include="DetalleUsuarios.resx">
       <DependentUpon>DetalleUsuarios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frExtracto.resx">
+      <DependentUpon>frExtracto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Movimientos.resx">
       <DependentUpon>Movimientos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="panelConciliacion.resx">
       <DependentUpon>panelConciliacion.vb</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> master
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.vb</DependentUpon>
     </EmbeddedResource>

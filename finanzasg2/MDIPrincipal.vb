@@ -76,7 +76,7 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub ConsiliaciónBancariaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ConsiliaciónBancariaToolStripMenuItem1.Click
-        Dim frm As New panelConciliacion()
+        Dim frm As New frExtracto()
         frm.Show()
     End Sub
 
@@ -109,6 +109,7 @@ Public Class MDIPrincipal
         CCnt.Show()
     End Sub
 
+<<<<<<< HEAD
     Private Sub MoviemientoBancarioToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -139,4 +140,9 @@ Public Class MDIPrincipal
         frpoliza.InEmperesa1 = 1
         frpoliza.ShowDialog()
     End Sub
+=======
+    Private Sub ImportarDocumentoToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+
+    End Sub
+>>>>>>> master
 End Class
